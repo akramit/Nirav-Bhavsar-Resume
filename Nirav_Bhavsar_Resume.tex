@@ -1,0 +1,273 @@
+% !TEX TS-program = lualatex
+
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+%\usepackage{fontspec}
+%\usepackage{fontawesome}
+
+% Configure page margins with geometry
+%\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.cm, top=.5cm, right=1.cm, bottom=.5cm, footskip=.5cm}
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+%\colorlet{awesome}{awesome-darknight}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{}{Nirav Bhavsar}
+%\position{Immediate Joiner}
+%\address{}
+
+%\mobile{} 
+\email{bhavsarniravn@gmail.com}
+
+%\homepage{Chennai, India}
+\github{niravnb}
+\linkedin{niravnb}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+ \extrainfo{\href{https://www.interviewbit.com/profile/niravnb}{InterviewBit}}
+
+%\quote{``Be the change that you want to see in the world."}
+\usepackage{lastpage}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+%\makecvfooter
+%  {Last updated: \today}
+%  {Nirav Bhavsar~~~·~~~Resume}
+%  {\thepage ~/ \pageref{LastPage}}
+
+
+\vspace{-4mm}
+\cvsection{Education}
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+	
+	%---------------------------------------------------------
+	\cventry
+	{M.S. (by Research) in Computer Science and Engineering; \color{text}\textbf{CGPA: 9.40}}
+	{Indian Institute of Technology Madras}
+	{2017 - 2020}
+	{}
+	{
+		\begin{cvitems} % Description(s) bullet points
+			\item \textbf{Key courses: }Advanced Data Structures and Algorithms, Advanced Programming Lab, Pattern Recognition and Machine Learning, Reinforcement Learning, Multi-armed bandits, Linear Algebra and Random Processes, Deep Learning (audited).
+		\end{cvitems}
+	}
+	
+	%---------------------------------------------------------
+	\cventry
+	{B.E. in Electronics and Communication; \color{text}\textbf{CGPA : 8.73}} %(82.30\%)
+	{Gujarat Technological University}
+	{2010 - 2014}
+	{}
+	{}
+
+\end{cventries}
+%---------------------------------------------------------------------
+\vspace{-7mm}
+
+
+
+\cvsection{Work Experience}
+\begin{cventries}
+		\cventry
+	{\entrytitlestyle{Samsung R\&D Bangalore} - \entrypositionstyle{Senior Engineer}}
+	{}
+	{}
+	{Joining deferred to Jan 2021}
+	{}
+	\vspace{-4mm}
+	
+	\cventry
+	{\entrytitlestyle{IBM Research} - \entrypositionstyle{Research Intern}}
+	{}
+	{}
+	{May 2019 - July 2019}
+	{
+		\begin{cvitems}
+			\item{{Worked on a Collaborative Cognition (CC) platform and developed the \textbf{first} end-to-end working Collab AI agent.}}
+			\item {{Implemented various skills, behaviors, and statistical models for the Collab AI agent, and a communicator module for the CC platform.}}
+			\item{{Performed a \textbf{comparative analysis} of different machine learning, deep learning, and time series forecasting models.}}
+		\end{cvitems}
+	}
+	\cventry
+	{\entrytitlestyle{Indian Institute of Technology Madras} - \entrypositionstyle{Teaching Assistant \& Project Associate (from Jan 2020)}}
+	{}
+	{}
+	{July 2017 - July 2020}
+	{
+	\begin{cvitems}
+		\item {{Assisted in designing and evaluating programming assignments, tutorials, and exams for various \textbf{AI/ML courses} (70+ students every semester).
+			}}
+		\item {{Worked on a simulation-based optimization in a risk-sensitive reinforcement learning framework project and published the work done on \href{https://arxiv.org/abs/2002.11440}{arxiv}.}}
+	\end{cvitems}
+	}
+	\cventry
+	{\entrytitlestyle{Infosys} - \entrypositionstyle{Senior Systems Engineer}}
+	{}
+	{}
+	{Oct 2014 - July 2017}
+	{
+	\begin{cvitems}
+		\item {{Worked on developing automation test scripts for mobile devices; {enhanced} automation framework which \textbf{reduced} execution time by \textbf{20\%}.}}
+		\item {{Received \textbf{Insta Award} for developing a tool which drastically cuts down the manual testing effort of updating passed test cases in HP ALM.}}
+		\item {{Completed Infosys Foundation Program Training in Microsoft Stream with an aggregate of \textbf{89\%} and also amongst the \textbf{top 5\%} performers.}}
+	\end{cvitems}
+		}
+\end{cventries}
+
+
+
+\cvsection{Key Projects}
+
+\begin{cventries}
+
+		\cventry
+	{\entrytitlestyle{Large-Scale Movie Recommendation using Cascading Bandits} - \entrypositionstyle{Multi-armed Bandits}}
+	{}
+	{}
+{}
+	{
+		\begin{cvitems}
+\item Implemented two online learning algorithms, namely \textbf{CascadeLinTS} and \textbf{CascadeLinUCB}, which models and adapts to users' behavior/interest.
+\item Performed \textbf{collaborative filtering} to extract movie features, then empirically evaluate both algorithm's performance with several baselines, under various settings on the MovieLens dataset containing \textbf{10M} movie ratings. 
+		\end{cvitems}	
+	}
+
+	\cventry
+{\entrytitlestyle{Table Summarizer} - \entrypositionstyle{Natural language processing}}
+{}
+{}
+{}
+{
+	\begin{cvitems}
+		\item Implemented an \textbf{encoder-decoder LSTM model} on the WeatherGov dataset to generate a summary from a table of weather records.
+		\item Improved BLEU score by incorporating pre-trained GloVe embeddings, attention mechanism, and beam search decoding.
+	\end{cvitems}	
+}
+
+
+
+	\cventry
+{\entrytitlestyle{Commodity Price Prediction} - \entrypositionstyle{Time series forecasting}}
+{}
+{}
+{}
+{
+	\begin{cvitems}
+		\item Performed a comparative study of different {time series models} and 
+		delivered a theoretical study on the reasons for failure of several models.
+		\item Employed sliding window technique along with providing prior information like seasonality, exogenous variables, etc. on various \textbf{machine learning}, \textbf{deep learning}, and \textbf{ensemble learning} models to improve prediction accuracy by \textbf{15\%}.
+	\end{cvitems}	
+}
+
+
+\cventry
+{\entrytitlestyle{Anti Spoofing in Face Recognition} - \entrypositionstyle{Computer vision}}
+{}
+{}
+{}
+{
+	\begin{cvitems}
+		\item Implemented an eye-blink detection based real-time \textbf{liveness detection} algorithm for face recognition.
+		\href{https://youtu.be/sNm2gxsGn-o}{{(Project video)}}
+	\end{cvitems}	
+}
+
+\cventry
+{\entrytitlestyle{Learning in Stochastic GridWorld} - \entrypositionstyle{Reinforcement Learning}}
+{}
+{}
+{}
+{
+	\begin{cvitems}
+		\item Designed a stochastic gridworld environment and trained an \textbf{AI agent} to learn optimal policies using various RL algorithms. \href{https://www.youtube.com/playlist?list=PL6zV1hWm_9ubZ13gZr0N9sT2EGQ3ZaLMc}{{(Project video)}}
+	\end{cvitems}	
+}
+\end{cventries}
+\vspace{-1mm}
+
+\cvsection{Skills and Tools}
+\begin{cvskills}
+	\cvskill
+	{Languages}
+	{Python, C++, C, MATLAB, SQL, Javascript} % 
+	\cvskill
+	{Softwares}
+	{Microsoft Visual Studio, Microsoft SQL Server, GitHub, \LaTeX, HP UFT, HP ALM}
+	\cvskill
+	{Libraries}
+	{Scikit-learn, TensorFlow, Keras, OpenCV, NLTK, SciPy, Pandas, Statsmodels, PyFlux, Spade, OpenAI Gym, D3.js}
+\end{cvskills}
+\vspace{-1mm}
+
+\cvsection{Publications}
+\vspace{4mm}
+\begin{cvitems}	
+	\item {\skillsetstyle{\textbf{Nirav Bhavsar} and Prashanth L. A., \textbf{Non-Asymptotic Bounds for Zeroth-Order Stochastic Optimization}, submitted to \textit{Neural Information Processing Systems (NeurIPS)}, and preprint is available on \href{https://arxiv.org/abs/2002.11440}{arXiv:2002.11440}, 2020.}}
+	%
+	\item {\skillsetstyle{Prashanth L. A., Shalab Bhatnagar, \textbf{Nirav Bhavsar}, Michael Fu and Steve Marcus, \textbf{Random directions stochastic approximation with deterministic perturbations}, \textit{IEEE Transactions on Automatic Control (IEEE TAC)}, vol. 65, no. 6, pp. 2450-2465, doi:\href{https://doi.org/10.1109/TAC.2019.2930821}{10.1109/TAC.2019.2930821}, 2020.}} 
+\end{cvitems}
+\vspace{3mm}
+
+\cvsection{Achievements and Co-curricular Activities}
+\vspace{4mm}
+\begin{cvitems}
+	\item { \skillsetstyle{Secured All India Rank \textbf{334 (99.69 percentile)} in GATE 2018 and \textbf{660 (99.31 percentile)} in GATE 2017 – Computer Science.}}
+	\item {\skillsetstyle{Among the \textbf{top 5} teams (out of 100+ teams) to qualify for the final round in JARVIS (Machine Learning competition) at Shaastra 2018, IIT Madras.}}
+\end{cvitems}
+
+\end{document}
